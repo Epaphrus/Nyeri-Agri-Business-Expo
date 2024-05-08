@@ -8,6 +8,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nyeri Agribusiness Expo</title>
+    <style>
+        .countdown-tile {
+          background-color: white;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          color: black;
+          font-weight: bold;
+          margin-bottom: 10px;
+          padding: 20px;
+          text-align: center;
+        }
+      </style>
 </head>
 
 <body>
@@ -51,15 +62,39 @@
         </nav>
 
         <main class="container">
-           <div class="py-3">
-            <img style=" width: 100%;" src="/static/images/Nyeri_Chaka_Agri_Expo.png" alt="Nyeri_Chaka_Agri_Expo">
-           </div>
+            <div class="py-3">
+                <img style=" width: 100%;" src="/static/images/Nyeri_Chaka_Agri_Expo.png" alt="Nyeri_Chaka_Agri_Expo">
+            </div>
+
+            <!-- COUNTDOWN CODE  -->
+            <div>
+                <!-- Bootstrap JS and jQuery (required for countdown functionality) -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                <div class="container mt-5">
+                    <h1 class="text-center mb-4">Agri Business Expo Countdown</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <div id="days" class="countdown-tile"></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div id="hours" class="countdown-tile"></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div id="minutes" class="countdown-tile"></div>
+                        </div>
+                        <div class="col-md-3 text-center">
+                            <div id="seconds" class="countdown-tile"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
 
     </section>
 
-
+    <script src="/static/js/countdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
